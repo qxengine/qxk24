@@ -20,7 +20,7 @@ foundation, K24 hierarchy, AMA 124 pattern, six directions, and health tiers.
 
 **Founder:** Masa Bayu
 **Date:** 2026-05-25
-**Version:** 1.0.0-alpha.2
+**Version:** 1.0.0-alpha.3
 **Repository:** https://github.com/qxengine/qxk24
 
 ---

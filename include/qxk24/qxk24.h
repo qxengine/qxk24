@@ -36,8 +36,8 @@ extern "C" {
 #define QXK24_VERSION_MAJOR   1
 #define QXK24_VERSION_MINOR   0
 #define QXK24_VERSION_PATCH   0
-#define QXK24_VERSION_TAG     "alpha.2"
-#define QXK24_VERSION_STRING  "1.0.0-alpha.2"
+#define QXK24_VERSION_TAG     "alpha.3"
+#define QXK24_VERSION_STRING  "1.0.0-alpha.3"
 
 #define QXK24_K                   1U
 #define QXK24_LERAIAN_2           2U
@@ -119,6 +119,8 @@ extern "C" {
 #define QXK24_ERR_LAW_VIOLATION       -9
 #define QXK24_ERR_NOT_FOUND           -10
 #define QXK24_ERR_CAPACITY_FULL       -11
+#define QXK24_ERR_NULL_PARAM          QXK24_ERR_INVALID_ARGUMENT
+#define QXK24_ERR_CAPACITY            QXK24_ERR_CAPACITY_FULL
 
 typedef enum QXK24Level_e {
     QXK24_LEVEL_ZARAH = 0,
@@ -139,6 +141,13 @@ typedef enum QXK24Direction_e {
     QXK24_DIR_KIRI = 5
 } QXK24Direction;
 
+#define QXK24_DIR_AS QXK24_DIR_ATAS
+#define QXK24_DIR_BH QXK24_DIR_BAWAH
+#define QXK24_DIR_DN QXK24_DIR_DEPAN
+#define QXK24_DIR_BG QXK24_DIR_BELAKANG
+#define QXK24_DIR_KN QXK24_DIR_KANAN
+#define QXK24_DIR_KR QXK24_DIR_KIRI
+
 typedef enum QXK24FlowType_e {
     QXK24_FLOW_OAT_SEHALA = 0,
     QXK24_FLOW_OAT_PUSINGAN = 1,
@@ -157,6 +166,8 @@ typedef enum QXK24CertTier_e {
     QXK24_CERT_PROFESSIONAL = 2,
     QXK24_CERT_SOVEREIGN = 3
 } QXK24CertTier;
+
+#define QXK24_CERT_UNCERTIFIED QXK24_CERT_NONE
 
 typedef enum QXK24ResourceType_e {
     QXK24_RESOURCE_MEMORY = 0,
@@ -259,6 +270,19 @@ typedef struct QXK24Config_s {
 } QXK24Config;
 
 typedef struct QXK24Kernel_s *QXK24KernelHandle;
+typedef int32_t qxk24_err_t;
+typedef QXK24KernelHandle qxk24_kernel_t;
+
+static inline QXK24Config qxk24_default_config(void) {
+    QXK24Config cfg = {
+        8ULL * 1024ULL * 1024ULL * 1024ULL,
+        4U,
+        QXK24_DEFAULT_DECLARED_X,
+        QXK24_DEFAULT_TOLERANCE_PCT,
+        "qxk24-default"
+    };
+    return cfg;
+}
 
 int32_t qxk24_create(const QXK24Config *config, QXK24KernelHandle *out_handle);
 int32_t qxk24_start(QXK24KernelHandle handle);
