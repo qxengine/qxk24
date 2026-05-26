@@ -1,8 +1,17 @@
-/**
- * @file qxk24_adam.c
- * @brief ADAM Constitutional AI Engine — Core Implementation
- * ALAMTOLOGI – Quranic Science | Founder: Masa Bayu
- */
+/* ============================================================
+ * qxk24_adam.c
+ * QXK24 Universal Kernel — ADAM Constitutional AI Engine
+ * ============================================================
+ * Owner : Masa Bayu (Founder, ALAMTOLOGII & QIUBBX)
+ * Created : 2026-05-26
+ * Repository : https://github.com/qxengine/qxk24
+ * Path : src/adam/qxk24_adam.c
+ * License : Apache 2.0
+ *
+ * Description:
+ * Implements the ADAM core lifecycle, request pipeline, response
+ * judgment, and constitutional snapshot state.
+ * ============================================================ */
 
 #include "qxk24/adam/qxk24_adam.h"
 #include "qxk24/kernel/qxk24_report.h"

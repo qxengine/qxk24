@@ -1,7 +1,17 @@
-/**
- * @file test_qxk24_adam_full.cpp
- * @brief Integration Tests — ADAM Full Constitutional Cycle
- */
+/* ============================================================
+ * test_qxk24_adam_full.cpp
+ * QXK24 Universal Kernel — ADAM Full Integration Tests
+ * ============================================================
+ * Owner : Masa Bayu (Founder, ALAMTOLOGII & QIUBBX)
+ * Created : 2026-05-26
+ * Repository : https://github.com/qxengine/qxk24
+ * Path : tests/integration/test_qxk24_adam_full.cpp
+ * License : Apache 2.0
+ *
+ * Description:
+ * Tests the full ADAM constitutional cycle across kernel
+ * resources, ADAM request processing, and session state.
+ * ============================================================ */
 
 #include <gtest/gtest.h>
 #include <cstring>
@@ -110,4 +120,4 @@ TEST_F(AdamFullTest, SessionStateActiveAfterActivate) {
     qxk24_adam_snapshot(adam, &s);
     EXPECT_EQ(QXK24_ADAM_STATE_ACTIVE, s.state);
 }
-TEST_F(AdamFullTest, AdamVersionStringMatches) { EXPECT_STREQ(QXK24_ADAM_VERSION, "1.4.0"); }
+TEST_F(AdamFullTest, AdamVersionStringMatches) { EXPECT_STREQ(QXK24_ADAM_VERSION, "1.6.0"); }

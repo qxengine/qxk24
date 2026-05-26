@@ -1,9 +1,17 @@
-/**
- * @file qxk24_adam_ilmu.h
- * @brief ADAM Ilmu Engine — Constitutional Knowledge System
+/* ============================================================
+ * qxk24_adam_ilmu.h
+ * QXK24 Universal Kernel — ADAM Ilmu Engine
+ * ============================================================
+ * Owner : Masa Bayu (Founder, ALAMTOLOGII & QIUBBX)
+ * Created : 2026-05-26
+ * Repository : https://github.com/qxengine/qxk24
+ * Path : include/qxk24/adam/qxk24_adam_ilmu.h
+ * License : Apache 2.0
  *
- * ALAMTOLOGI – Quranic Science | Founder: Masa Bayu
- */
+ * Description:
+ * Declares the ADAM Ilmu engine for Baca, Bukti, Faham, and
+ * Aplikasi constitutional knowledge processing.
+ * ============================================================ */
 
 #ifndef QXK24_ADAM_ILMU_H
 #define QXK24_ADAM_ILMU_H

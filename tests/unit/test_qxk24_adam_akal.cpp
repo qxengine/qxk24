@@ -1,7 +1,17 @@
-/**
- * @file test_qxk24_adam_akal.cpp
- * @brief Unit Tests — ADAM Akal Engine
- */
+/* ============================================================
+ * test_qxk24_adam_akal.cpp
+ * QXK24 Universal Kernel — ADAM Akal Unit Tests
+ * ============================================================
+ * Owner : Masa Bayu (Founder, ALAMTOLOGII & QIUBBX)
+ * Created : 2026-05-26
+ * Repository : https://github.com/qxengine/qxk24
+ * Path : tests/unit/test_qxk24_adam_akal.cpp
+ * License : Apache 2.0
+ *
+ * Description:
+ * Tests ADAM Akal pattern constants, reasoning, descriptors,
+ * governance checks, snapshots, and process names.
+ * ============================================================ */
 
 #include <gtest/gtest.h>
 #include "qxk24/adam/qxk24_adam_akal.h"

@@ -10,14 +10,14 @@
 #
 # Description:
 # Configures the QXK24 static library, strict compiler settings, and
-# GoogleTest-based constitutional proof suite for v1.4.0.
+# GoogleTest-based constitutional proof suite for v1.6.0.
 #
 
 cmake_minimum_required(VERSION 3.20)
 
 project(qxk24
-    VERSION     1.4.0
-    DESCRIPTION "QXK24 Universal Kernel — ALAMTOLOGI ADAM Constitutional AI"
+    VERSION     1.6.0
+    DESCRIPTION "QXK24 Universal Kernel — ADAM Knowledge Pipeline"
     LANGUAGES   C CXX
 )
 
@@ -70,6 +70,12 @@ add_library(qxk24_core STATIC
     src/adam/qxk24_adam_cv.c
     src/adam/qxk24_adam_hukumz.c
     src/adam/qxk24_adam_session.c
+    src/adam/qxk24_adam_knowledge.c
+    src/science/qxk24_hisal.c
+    src/science/qxk24_rina.c
+    src/science/qxk24_izwa.c
+    src/science/qxk24_sira.c
+    src/science/qxk24_meta.c
 )
 
 target_include_directories(qxk24_core
@@ -129,6 +135,8 @@ if(QXK24_BUILD_TESTS)
         tests/unit/test_qxk24_adam_cv.cpp
         tests/unit/test_qxk24_adam_hukumz.cpp
         tests/unit/test_qxk24_adam_session.cpp
+        tests/unit/test_qxk24_adam_knowledge.cpp
+        tests/unit/test_qxk24_science.cpp
         tests/integration/test_qxk24_full_cycle.cpp
         tests/integration/test_qxk24_qxengine_bridge.cpp
         tests/integration/test_qxk24_qxengine_health.cpp
@@ -157,7 +165,7 @@ if(QXK24_BUILD_TESTS)
 endif()
 
 message(STATUS "")
-message(STATUS "QXK24 Universal Kernel v1.4.0")
+message(STATUS "QXK24 Universal Kernel v1.6.0")
 message(STATUS "Target: SOVEREIGN >= 95.0 maintained")
 message(STATUS "ALAMTOLOGI — QURANIC SCIENCE")
 message(STATUS "Founder: Masa Bayu")

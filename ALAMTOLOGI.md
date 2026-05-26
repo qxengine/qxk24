@@ -20,7 +20,7 @@ foundation, K24 hierarchy, AMA 124 pattern, six directions, and health tiers.
 
 **Founder:** Masa Bayu
 **Date:** 2026-05-25
-**Version:** 1.4.0
+**Version:** 1.6.0
 **Repository:** https://github.com/qxk24/qxk24
 
 ---
@@ -192,7 +192,8 @@ QXK24 Universal Kernel
 
 ## Relationship to ADAM
 
-ADAM is the QXK24 Constitutional AI Engine introduced in v1.4.0.
+ADAM is the QXK24 Constitutional AI Engine introduced in v1.4.0
+and extended in v1.6.0 as the Founder-approved knowledge pipeline.
 It applies Hukum X and Hukum Z to AI request processing:
 
 ```text
@@ -204,6 +205,29 @@ QXK24 (K24md)  — Constitutional Kernel
 
 ADAM processes through Ilmu, Akal, Adab, cV, Hukum Z, and Session
 engines before issuing MAKMUR, ISLAH, or WAQF judgment.
+
+ADAM also defines an internal Founder-approved knowledge pipeline so new
+ALAMTOLOGI data can be added over time, validated, versioned, indexed,
+and applied as the benchmark layer over external AI output.
+
+---
+
+## Relationship to Sains ALAMTOLOGI
+
+Sains ALAMTOLOGI is the QXK24 Science Engine introduced in v1.5.0.
+It adds constitutional mathematics, physics, chemistry, biology,
+and META-FIZIK compatibility:
+
+```text
+HISAL       Mathematics — AIDIL, TAJU, PL/PG
+RINA        Physics     — force, load, gradient, 6:1, 1:2
+IZWA        Chemistry   — 36 Mikro reaction table
+SIRA        Biology     — ppU growth and formation factors
+META-FIZIK  Compatibility between active META and passive FIZIK
+```
+
+These sciences extend QXK24 into executable ALAMTOLOGI proof
+modules under the same SOVEREIGN constitutional kernel.
 
 ---
 

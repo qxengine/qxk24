@@ -1,7 +1,17 @@
-/**
- * @file test_qxk24_adam_ilmu.cpp
- * @brief Unit Tests — ADAM Ilmu Engine
- */
+/* ============================================================
+ * test_qxk24_adam_ilmu.cpp
+ * QXK24 Universal Kernel — ADAM Ilmu Unit Tests
+ * ============================================================
+ * Owner : Masa Bayu (Founder, ALAMTOLOGII & QIUBBX)
+ * Created : 2026-05-26
+ * Repository : https://github.com/qxengine/qxk24
+ * Path : tests/unit/test_qxk24_adam_ilmu.cpp
+ * License : Apache 2.0
+ *
+ * Description:
+ * Tests ADAM Ilmu stage processing, completion checks, snapshot
+ * counts, and stage/type names.
+ * ============================================================ */
 
 #include <gtest/gtest.h>
 #include "qxk24/adam/qxk24_adam_ilmu.h"

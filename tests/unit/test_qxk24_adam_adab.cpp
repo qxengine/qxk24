@@ -1,7 +1,17 @@
-/**
- * @file test_qxk24_adam_adab.cpp
- * @brief Unit Tests — ADAM Adab Engine
- */
+/* ============================================================
+ * test_qxk24_adam_adab.cpp
+ * QXK24 Universal Kernel — ADAM Adab Unit Tests
+ * ============================================================
+ * Owner : Masa Bayu (Founder, ALAMTOLOGII & QIUBBX)
+ * Created : 2026-05-26
+ * Repository : https://github.com/qxengine/qxk24
+ * Path : tests/unit/test_qxk24_adam_adab.cpp
+ * License : Apache 2.0
+ *
+ * Description:
+ * Tests ADAM Adab scoring, satisfaction checks, snapshots, and
+ * constitutional conduct element names.
+ * ============================================================ */
 
 #include <gtest/gtest.h>
 #include "qxk24/adam/qxk24_adam_adab.h"

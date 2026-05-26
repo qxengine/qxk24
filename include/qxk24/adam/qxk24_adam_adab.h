@@ -1,9 +1,17 @@
-/**
- * @file qxk24_adam_adab.h
- * @brief ADAM Adab Engine — Constitutional Conduct System
+/* ============================================================
+ * qxk24_adam_adab.h
+ * QXK24 Universal Kernel — ADAM Adab Engine
+ * ============================================================
+ * Owner : Masa Bayu (Founder, ALAMTOLOGII & QIUBBX)
+ * Created : 2026-05-26
+ * Repository : https://github.com/qxengine/qxk24
+ * Path : include/qxk24/adam/qxk24_adam_adab.h
+ * License : Apache 2.0
  *
- * ALAMTOLOGI – Quranic Science | Founder: Masa Bayu
- */
+ * Description:
+ * Declares the ADAM Adab engine for Benar, Amanah,
+ * Menyampaikan, and Bijaksana conduct scoring.
+ * ============================================================ */
 
 #ifndef QXK24_ADAM_ADAB_H
 #define QXK24_ADAM_ADAB_H

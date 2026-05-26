@@ -1,9 +1,17 @@
-/**
- * @file qxk24_adam_hukumz.h
- * @brief ADAM Hukum Z Validator
+/* ============================================================
+ * qxk24_adam_hukumz.h
+ * QXK24 Universal Kernel — ADAM Hukum Z Validator
+ * ============================================================
+ * Owner : Masa Bayu (Founder, ALAMTOLOGII & QIUBBX)
+ * Created : 2026-05-26
+ * Repository : https://github.com/qxengine/qxk24
+ * Path : include/qxk24/adam/qxk24_adam_hukumz.h
+ * License : Apache 2.0
  *
- * ALAMTOLOGI – Quranic Science | Founder: Masa Bayu
- */
+ * Description:
+ * Declares ADAM validation for Pola, Kadar, Pasangan, and
+ * Keseimbangan under Hukum Z.
+ * ============================================================ */
 
 #ifndef QXK24_ADAM_HUKUMZ_H
 #define QXK24_ADAM_HUKUMZ_H

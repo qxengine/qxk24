@@ -1,8 +1,17 @@
-/**
- * @file test_qxk24_adam.cpp
- * @brief Unit Tests — ADAM Constitutional AI Engine
- * ALAMTOLOGI – Quranic Science | Founder: Masa Bayu
- */
+/* ============================================================
+ * test_qxk24_adam.cpp
+ * QXK24 Universal Kernel — ADAM Core Unit Tests
+ * ============================================================
+ * Owner : Masa Bayu (Founder, ALAMTOLOGII & QIUBBX)
+ * Created : 2026-05-26
+ * Repository : https://github.com/qxengine/qxk24
+ * Path : tests/unit/test_qxk24_adam.cpp
+ * License : Apache 2.0
+ *
+ * Description:
+ * Tests ADAM constitutional identity, lifecycle, request
+ * processing, judgment names, and Akal pattern constants.
+ * ============================================================ */
 
 #include <gtest/gtest.h>
 #include <cstring>

@@ -1,7 +1,17 @@
-/**
- * @file test_qxk24_adam_session.cpp
- * @brief Unit Tests — ADAM Session Engine
- */
+/* ============================================================
+ * test_qxk24_adam_session.cpp
+ * QXK24 Universal Kernel — ADAM Session Unit Tests
+ * ============================================================
+ * Owner : Masa Bayu (Founder, ALAMTOLOGII & QIUBBX)
+ * Created : 2026-05-26
+ * Repository : https://github.com/qxengine/qxk24
+ * Path : tests/unit/test_qxk24_adam_session.cpp
+ * License : Apache 2.0
+ *
+ * Description:
+ * Tests ADAM session lifecycle, journey state transitions,
+ * snapshots, and [1001] journey constants.
+ * ============================================================ */
 
 #include <gtest/gtest.h>
 #include "qxk24/adam/qxk24_adam_session.h"

@@ -1,8 +1,17 @@
-/**
- * @file qxk24_adam_akal.c
- * @brief ADAM Akal Engine implementation
- * ALAMTOLOGI – Quranic Science | Founder: Masa Bayu
- */
+/* ============================================================
+ * qxk24_adam_akal.c
+ * QXK24 Universal Kernel — ADAM Akal Engine
+ * ============================================================
+ * Owner : Masa Bayu (Founder, ALAMTOLOGII & QIUBBX)
+ * Created : 2026-05-26
+ * Repository : https://github.com/qxengine/qxk24
+ * Path : src/adam/qxk24_adam_akal.c
+ * License : Apache 2.0
+ *
+ * Description:
+ * Implements ADAM Akal reasoning, Tahap Akal descriptors, and
+ * Akal-governed processing statistics.
+ * ============================================================ */
 
 #include "qxk24/adam/qxk24_adam_akal.h"
 #include <stdlib.h>

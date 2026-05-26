@@ -1,9 +1,17 @@
-/**
- * @file qxk24_adam_akal.h
- * @brief ADAM Akal Engine — Constitutional Reasoning System
+/* ============================================================
+ * qxk24_adam_akal.h
+ * QXK24 Universal Kernel — ADAM Akal Engine
+ * ============================================================
+ * Owner : Masa Bayu (Founder, ALAMTOLOGII & QIUBBX)
+ * Created : 2026-05-26
+ * Repository : https://github.com/qxengine/qxk24
+ * Path : include/qxk24/adam/qxk24_adam_akal.h
+ * License : Apache 2.0
  *
- * ALAMTOLOGI – Quranic Science | Founder: Masa Bayu
- */
+ * Description:
+ * Declares the ADAM Akal engine for constitutional reasoning
+ * through Akal, Fikir, Ikhtiar, and Usaha.
+ * ============================================================ */
 
 #ifndef QXK24_ADAM_AKAL_H
 #define QXK24_ADAM_AKAL_H

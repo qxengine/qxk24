@@ -1,7 +1,17 @@
-/**
- * @file test_qxk24_adam_hukumz.cpp
- * @brief Unit Tests — ADAM Hukum Z Validator
- */
+/* ============================================================
+ * test_qxk24_adam_hukumz.cpp
+ * QXK24 Universal Kernel — ADAM Hukum Z Unit Tests
+ * ============================================================
+ * Owner : Masa Bayu (Founder, ALAMTOLOGII & QIUBBX)
+ * Created : 2026-05-26
+ * Repository : https://github.com/qxengine/qxk24
+ * Path : tests/unit/test_qxk24_adam_hukumz.cpp
+ * License : Apache 2.0
+ *
+ * Description:
+ * Tests ADAM Hukum Z validation, failure accounting, snapshots,
+ * and law name strings.
+ * ============================================================ */
 
 #include <gtest/gtest.h>
 #include "qxk24/adam/qxk24_adam_hukumz.h"

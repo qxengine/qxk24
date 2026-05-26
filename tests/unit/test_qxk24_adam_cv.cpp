@@ -1,7 +1,17 @@
-/**
- * @file test_qxk24_adam_cv.cpp
- * @brief Unit Tests — ADAM Contribution Value Engine
- */
+/* ============================================================
+ * test_qxk24_adam_cv.cpp
+ * QXK24 Universal Kernel — ADAM cV Unit Tests
+ * ============================================================
+ * Owner : Masa Bayu (Founder, ALAMTOLOGII & QIUBBX)
+ * Created : 2026-05-26
+ * Repository : https://github.com/qxengine/qxk24
+ * Path : tests/unit/test_qxk24_adam_cv.cpp
+ * License : Apache 2.0
+ *
+ * Description:
+ * Tests ADAM contribution value computation, cV level
+ * assessment, snapshots, and cV level names.
+ * ============================================================ */
 
 #include <gtest/gtest.h>
 #include "qxk24/adam/qxk24_adam_cv.h"

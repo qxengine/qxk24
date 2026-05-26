@@ -1,8 +1,17 @@
-/**
- * @file qxk24_adam_session.c
- * @brief ADAM Session Engine implementation
- * ALAMTOLOGI – Quranic Science | Founder: Masa Bayu
- */
+/* ============================================================
+ * qxk24_adam_session.c
+ * QXK24 Universal Kernel — ADAM Session Engine
+ * ============================================================
+ * Owner : Masa Bayu (Founder, ALAMTOLOGII & QIUBBX)
+ * Created : 2026-05-26
+ * Repository : https://github.com/qxengine/qxk24
+ * Path : src/adam/qxk24_adam_session.c
+ * License : Apache 2.0
+ *
+ * Description:
+ * Implements ADAM session state and the [1001] constitutional
+ * journey record.
+ * ============================================================ */
 
 #include "qxk24/adam/qxk24_adam_session.h"
 #include <stdlib.h>

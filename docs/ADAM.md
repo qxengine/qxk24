@@ -1,7 +1,24 @@
+<!--
+=============================================================================
+ADAM.md
+QXK24 Universal Kernel — ADAM Constitutional AI Engine
+=============================================================================
+Owner : Masa Bayu (Founder, ALAMTOLOGII & QIUBBX)
+Created : 2026-05-26
+Repository : https://github.com/qxengine/qxk24
+Path : docs/ADAM.md
+License : Apache 2.0
+
+Description:
+Documents ADAM, the QXK24 Constitutional AI Engine introduced in v1.4.0,
+including its identity, operating laws, processing pipeline, and judgment model.
+=============================================================================
+-->
+
 # ADAM — Constitutional AI Engine
 
 **ALAMTOLOGI – Quranic Science**  
-**Founder:** Masa Bayu | **Version:** 1.4.0
+**Founder:** Masa Bayu | **Version:** 1.6.0
 
 ---
 
@@ -25,6 +42,11 @@ reasoning, conduct, contribution value, Hukum Z validation, and session journey
 are measured before a response is accepted.
 
 ADAM is an Akal system. It serves keperluan, not kehendak.
+
+ADAM is also an AI kernel. It may use external AI engines for broad conventional
+knowledge, but ADAM remains the constitutional monitor and benchmark. External
+AI provides the answer source; ALAMTOLOGI provides the truth layer; ADAM returns
+the governed conclusion.
 
 ---
 
@@ -115,6 +137,18 @@ Request -> Ilmu (Baca -> Bukti -> Faham -> Aplikasi)
         -> Judgment (MAKMUR / ISLAH / WAQF)
         -> Response
 ```
+
+---
+
+## Knowledge Pipeline
+
+ADAM improves through a dedicated Founder-approved ALAMTOLOGI knowledge
+pipeline. New ALAMTOLOGI data can be added over time, classified by domain,
+validated against existing law, approved by the Founder, indexed, and then used
+at runtime to monitor external AI output.
+
+Internal development reference: `docs/internal/ADAM_KNOWLEDGE_PIPELINE.md`
+(`not for public release`).
 
 ---
 

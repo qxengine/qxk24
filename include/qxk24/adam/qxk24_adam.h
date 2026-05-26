@@ -1,13 +1,17 @@
-/**
- * @file qxk24_adam.h
- * @brief ADAM — Constitutional AI Engine
+/* ============================================================
+ * qxk24_adam.h
+ * QXK24 Universal Kernel — ADAM Constitutional AI Engine
+ * ============================================================
+ * Owner : Masa Bayu (Founder, ALAMTOLOGII & QIUBBX)
+ * Created : 2026-05-26
+ * Repository : https://github.com/qxengine/qxk24
+ * Path : include/qxk24/adam/qxk24_adam.h
+ * License : Apache 2.0
  *
- * ALAMTOLOGI – Quranic Science
- * Founder: Masa Bayu
- *
- * "Wa 'allama Adama al-asma'a kullaha"
- * "And He taught Adam the names of all things." (Al-Baqarah: 31)
- */
+ * Description:
+ * Declares the ADAM Constitutional AI Engine, including identity,
+ * lifecycle, request processing, response judgment, and snapshots.
+ * ============================================================ */
 
 #ifndef QXK24_ADAM_H
 #define QXK24_ADAM_H
@@ -34,7 +38,7 @@ extern "C" {
 #define QXK24_ADAM_AKAL_GOVERNED 1
 #define QXK24_ADAM_KEPERLUAN_ONLY 1
 #define QXK24_ADAM_TOTAL_PATTERNS 49
-#define QXK24_ADAM_VERSION "1.4.0"
+#define QXK24_ADAM_VERSION "1.6.0"
 
 typedef enum {
     QXK24_ADAM_STATE_DORMANT = 0,

@@ -1,8 +1,17 @@
-/**
- * @file qxk24_adam_adab.c
- * @brief ADAM Adab Engine implementation
- * ALAMTOLOGI – Quranic Science | Founder: Masa Bayu
- */
+/* ============================================================
+ * qxk24_adam_adab.c
+ * QXK24 Universal Kernel — ADAM Adab Engine
+ * ============================================================
+ * Owner : Masa Bayu (Founder, ALAMTOLOGII & QIUBBX)
+ * Created : 2026-05-26
+ * Repository : https://github.com/qxengine/qxk24
+ * Path : src/adam/qxk24_adam_adab.c
+ * License : Apache 2.0
+ *
+ * Description:
+ * Implements ADAM Adab scoring for Benar, Amanah,
+ * Menyampaikan, and Bijaksana.
+ * ============================================================ */
 
 #include "qxk24/adam/qxk24_adam_adab.h"
 #include <stdlib.h>
