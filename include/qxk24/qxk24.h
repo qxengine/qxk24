@@ -36,8 +36,8 @@ extern "C" {
 #define QXK24_VERSION_MAJOR   1
 #define QXK24_VERSION_MINOR   0
 #define QXK24_VERSION_PATCH   0
-#define QXK24_VERSION_TAG     "alpha.4"
-#define QXK24_VERSION_STRING  "1.0.0-alpha.4"
+#define QXK24_VERSION_TAG     "beta.1"
+#define QXK24_VERSION_STRING  "1.0.0-beta.1"
 
 #define QXK24_K                   1U
 #define QXK24_LERAIAN_2           2U
@@ -121,6 +121,8 @@ extern "C" {
 #define QXK24_ERR_CAPACITY_FULL       -11
 #define QXK24_ERR_NULL_PARAM          QXK24_ERR_INVALID_ARGUMENT
 #define QXK24_ERR_CAPACITY            QXK24_ERR_CAPACITY_FULL
+#define QXK24_ERR_NOT_STARTED         QXK24_ERR_NOT_INITIALIZED
+#define QXK24_ERR_FAULT               QXK24_ERR_LAW_VIOLATION
 
 typedef enum QXK24Level_e {
     QXK24_LEVEL_ZARAH = 0,
