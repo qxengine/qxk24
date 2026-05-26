@@ -11,15 +11,9 @@
 
 ## Purpose
 
-This SOP gives developers a repeatable procedure for building any category of
-application with QXK24. It converts the QXK24 constitutional model into daily
-engineering steps: define the app, map resources, measure work, run cycles,
-generate reports, judge health, test proofs, and release only when the system
-can explain its own state.
+This SOP gives developers a repeatable procedure for building any category of application with QXK24. It converts the QXK24 constitutional model into daily engineering steps: define the app, map resources, measure work, run cycles, generate reports, judge health, test proofs, and release only when the system can explain its own state.
 
-The SOP applies to mobile apps, backend APIs, AI systems, financial software,
-healthcare tools, education platforms, IoT software, games, developer tools,
-and operating utilities.
+The SOP applies to mobile apps, backend APIs, AI systems, financial software, healthcare tools, education platforms, IoT software, games, developer tools, and operating utilities.
 
 ---
 
