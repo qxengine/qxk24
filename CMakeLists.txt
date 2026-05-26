@@ -10,14 +10,14 @@
 #
 # Description:
 # Configures the QXK24 static library, strict compiler settings, and
-# GoogleTest-based constitutional proof suite for v1.3.0.
+# GoogleTest-based constitutional proof suite for v1.4.0.
 #
 
 cmake_minimum_required(VERSION 3.20)
 
 project(qxk24
-    VERSION     1.3.0
-    DESCRIPTION "QXK24 Universal Kernel — ALAMTOLOGI Faktor Tenaga Kernel"
+    VERSION     1.4.0
+    DESCRIPTION "QXK24 Universal Kernel — ALAMTOLOGI ADAM Constitutional AI"
     LANGUAGES   C CXX
 )
 
@@ -63,6 +63,13 @@ add_library(qxk24_core STATIC
     src/ft/qxk24_jisim.c
     src/ft/qxk24_serak.c
     src/ft/qxk24_putar.c
+    src/adam/qxk24_adam.c
+    src/adam/qxk24_adam_ilmu.c
+    src/adam/qxk24_adam_akal.c
+    src/adam/qxk24_adam_adab.c
+    src/adam/qxk24_adam_cv.c
+    src/adam/qxk24_adam_hukumz.c
+    src/adam/qxk24_adam_session.c
 )
 
 target_include_directories(qxk24_core
@@ -115,11 +122,19 @@ if(QXK24_BUILD_TESTS)
         tests/unit/test_qxk24_jisim.cpp
         tests/unit/test_qxk24_serak.cpp
         tests/unit/test_qxk24_putar.cpp
+        tests/unit/test_qxk24_adam.cpp
+        tests/unit/test_qxk24_adam_ilmu.cpp
+        tests/unit/test_qxk24_adam_akal.cpp
+        tests/unit/test_qxk24_adam_adab.cpp
+        tests/unit/test_qxk24_adam_cv.cpp
+        tests/unit/test_qxk24_adam_hukumz.cpp
+        tests/unit/test_qxk24_adam_session.cpp
         tests/integration/test_qxk24_full_cycle.cpp
         tests/integration/test_qxk24_qxengine_bridge.cpp
         tests/integration/test_qxk24_qxengine_health.cpp
         tests/integration/test_qxk24_full_stack.cpp
         tests/integration/test_qxk24_caliph_kernel.cpp
+        tests/integration/test_qxk24_adam_full.cpp
         tests/validation/test_qxk24_qiubbx.cpp
         tests/validation/test_qxk24_sovereign.cpp
     )
@@ -142,7 +157,7 @@ if(QXK24_BUILD_TESTS)
 endif()
 
 message(STATUS "")
-message(STATUS "QXK24 Universal Kernel v1.3.0")
+message(STATUS "QXK24 Universal Kernel v1.4.0")
 message(STATUS "Target: SOVEREIGN >= 95.0 maintained")
 message(STATUS "ALAMTOLOGI — QURANIC SCIENCE")
 message(STATUS "Founder: Masa Bayu")

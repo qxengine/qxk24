@@ -20,7 +20,7 @@ foundation, K24 hierarchy, AMA 124 pattern, six directions, and health tiers.
 
 **Founder:** Masa Bayu
 **Date:** 2026-05-25
-**Version:** 1.3.0
+**Version:** 1.4.0
 **Repository:** https://github.com/qxk24/qxk24
 
 ---
@@ -187,6 +187,23 @@ QXK24 Universal Kernel
 └── K24ob: QXCPU    (CPU governance — planned)
 └── K24ob: QXEnergy (Energy governance — planned)
 ```
+
+---
+
+## Relationship to ADAM
+
+ADAM is the QXK24 Constitutional AI Engine introduced in v1.4.0.
+It applies Hukum X and Hukum Z to AI request processing:
+
+```text
+Y (Creator)    — Ketetapan
+X (ADAM)       — Value = 1, Capacity 1-7, Akur/Engkar, [1001]
+Z (Universe)   — Pola, Kadar, Pasangan, Keseimbangan
+QXK24 (K24md)  — Constitutional Kernel
+```
+
+ADAM processes through Ilmu, Akal, Adab, cV, Hukum Z, and Session
+engines before issuing MAKMUR, ISLAH, or WAQF judgment.
 
 ---
 
