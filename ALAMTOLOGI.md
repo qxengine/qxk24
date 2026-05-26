@@ -5,7 +5,7 @@ QXK24 Universal Kernel — Constitutional Record
 =============================================================================
 Owner : Masa Bayu (Founder, ALAMTOLOGI & QIUBBX)
 Created : 2026-05-25
-Repository : https://github.com/qxengine/qxk24
+Repository : https://github.com/qxk24/qxk24
 Path : ALAMTOLOGI.md
 License : Apache 2.0
 
@@ -21,7 +21,7 @@ foundation, K24 hierarchy, AMA 124 pattern, six directions, and health tiers.
 **Founder:** Masa Bayu
 **Date:** 2026-05-25
 **Version:** 1.2.0
-**Repository:** https://github.com/qxengine/qxk24
+**Repository:** https://github.com/qxk24/qxk24
 
 ---
 

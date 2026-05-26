@@ -4,7 +4,7 @@
 **Date:** 2026-05-26
 **Founder:** Masa Bayu
 **Contact:** masaqiubbx@gmail.com
-**Repository:** https://github.com/qxengine/qxk24
+**Repository:** https://github.com/qxk24/qxk24
 
 ---
 

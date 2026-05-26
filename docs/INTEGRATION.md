@@ -4,7 +4,7 @@
 **Version:** 1.0.0-beta.1  
 **Date:** 2026-05-25  
 **Founder:** Masa Bayu  
-**Repository:** https://github.com/qxengine/qxk24
+**Repository:** https://github.com/qxk24/qxk24
 
 ## ALAMTOLOGI
 

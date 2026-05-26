@@ -4,10 +4,10 @@
 > Founder: Masa Bayu · masaqiubbx@gmail.com
 > Version: 1.0.0 · Released: 2026-05-25
 
-[![Version](https://img.shields.io/badge/version-1.0.0-blue)](https://github.com/qxengine/qxk24/releases/tag/v1.0.0)
-[![Tests](https://img.shields.io/badge/tests-516%2F516-brightgreen)](https://github.com/qxengine/qxk24)
-[![Certification](https://img.shields.io/badge/certification-SOVEREIGN-gold)](https://github.com/qxengine/qxk24)
-[![License](https://img.shields.io/badge/license-Proprietary-red)](https://github.com/qxengine/qxk24)
+[![Version](https://img.shields.io/badge/version-1.0.0-blue)](https://github.com/qxk24/qxk24/releases/tag/v1.0.0)
+[![Tests](https://img.shields.io/badge/tests-516%2F516-brightgreen)](https://github.com/qxk24/qxk24)
+[![Certification](https://img.shields.io/badge/certification-SOVEREIGN-gold)](https://github.com/qxk24/qxk24)
+[![License](https://img.shields.io/badge/license-Proprietary-red)](https://github.com/qxk24/qxk24)
 
 ---
 
@@ -35,9 +35,9 @@ QXK24    (K24md — Modul  — scale 46,656)   ← MASTER
 
 | Component | Role | K24 Level | Repository |
 |---|---|---|---|
-| QXK24 | Universal Kernel — MASTER | K24md — Modul | [qxk24](https://github.com/qxengine/qxk24) |
-| QXEngine | Memory Governor | K24ob — Objek | [qxengine-core](https://github.com/qxengine/qxengine-core) |
-| QXMemloc | Memory Locator | K24at — Atom | [qxengine-core](https://github.com/qxengine/qxengine-core) |
+| QXK24 | Universal Kernel — MASTER | K24md — Modul | [qxk24](https://github.com/qxk24/qxk24) |
+| QXEngine | Memory Governor | K24ob — Objek | [qxengine-core](https://github.com/qxk24/qxengine-core) |
+| QXMemloc | Memory Locator | K24at — Atom | [qxengine-core](https://github.com/qxk24/qxengine-core) |
 
 ---
 
@@ -171,7 +171,7 @@ QXK24Engine.onHealthChanged = { snapshot ->
 ## Build
 
 ```bash
-git clone https://github.com/qxengine/qxk24.git
+git clone https://github.com/qxk24/qxk24.git
 cd qxk24
 cmake -B build -DCMAKE_BUILD_TYPE=Release
 cmake --build build
@@ -203,10 +203,10 @@ cd build && ctest --output-on-failure
 
 | Repo | Role |
 |---|---|
-| [qxk24](https://github.com/qxengine/qxk24) | Universal Kernel — MASTER |
-| [qxengine-core](https://github.com/qxengine/qxengine-core) | Memory Governor — K24ob |
-| [qxengine-ios](https://github.com/qxengine/qxengine-ios) | iOS Bridge |
-| [qxengine-android](https://github.com/qxengine/qxengine-android) | Android Bridge |
+| [qxk24](https://github.com/qxk24/qxk24) | Universal Kernel — MASTER |
+| [qxengine-core](https://github.com/qxk24/qxengine-core) | Memory Governor — K24ob |
+| [qxengine-ios](https://github.com/qxk24/qxengine-ios) | iOS Bridge |
+| [qxengine-android](https://github.com/qxk24/qxengine-android) | Android Bridge |
 
 ---
 
@@ -215,7 +215,7 @@ cd build && ctest --output-on-failure
 **ALAMTOLOGI – Quranic Science**
 **Founder:** Masa Bayu
 **Contact:** masaqiubbx@gmail.com
-**Organization:** [QXK24 – Universal Kernel](https://github.com/qxengine)
+**Organization:** [QXK24 – Universal Kernel](https://github.com/qxk24)
 **Released:** 2026-05-25
 
 > *QXK24 is my contribution to showing that technology
