@@ -10,7 +10,7 @@
 #
 # Description:
 # Configures the QXK24 static library, strict compiler settings, and
-# GoogleTest-based constitutional proof suite for v1.0.0-beta.1.
+# GoogleTest-based constitutional proof suite for v1.0.0.
 #
 
 cmake_minimum_required(VERSION 3.20)
@@ -46,6 +46,8 @@ add_library(qxk24_core STATIC
     src/kernel/qxk24_governor.c
     src/bridge/qxk24_qxengine_bridge.c
     src/bridge/qxk24_qxengine_health.c
+    src/validation/qxk24_qiubbx.c
+    src/memloc/qxk24_memloc_bridge.c
 )
 
 target_include_directories(qxk24_core
@@ -88,6 +90,9 @@ if(QXK24_BUILD_TESTS)
         tests/integration/test_qxk24_full_cycle.cpp
         tests/integration/test_qxk24_qxengine_bridge.cpp
         tests/integration/test_qxk24_qxengine_health.cpp
+        tests/integration/test_qxk24_full_stack.cpp
+        tests/validation/test_qxk24_qiubbx.cpp
+        tests/validation/test_qxk24_sovereign.cpp
     )
 
     target_link_libraries(qxk24_tests
@@ -108,7 +113,8 @@ if(QXK24_BUILD_TESTS)
 endif()
 
 message(STATUS "")
-message(STATUS "QXK24 Universal Kernel v1.0.0-beta.1")
+message(STATUS "QXK24 Universal Kernel v1.0.0")
+message(STATUS "Target: SOVEREIGN >= 95.0")
 message(STATUS "ALAMTOLOGI — QURANIC SCIENCE")
 message(STATUS "Founder: Masa Bayu")
 message(STATUS "Repository: https://github.com/qxengine/qxk24")

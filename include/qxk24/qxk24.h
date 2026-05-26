@@ -36,8 +36,8 @@ extern "C" {
 #define QXK24_VERSION_MAJOR   1
 #define QXK24_VERSION_MINOR   0
 #define QXK24_VERSION_PATCH   0
-#define QXK24_VERSION_TAG     "beta.1"
-#define QXK24_VERSION_STRING  "1.0.0-beta.1"
+#define QXK24_VERSION_TAG     "release"
+#define QXK24_VERSION_STRING  "1.0.0"
 
 #define QXK24_K                   1U
 #define QXK24_LERAIAN_2           2U
