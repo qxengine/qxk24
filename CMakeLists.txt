@@ -10,14 +10,14 @@
 #
 # Description:
 # Configures the QXK24 static library, strict compiler settings, and
-# GoogleTest-based constitutional proof suite for v1.0.0.
+# GoogleTest-based constitutional proof suite for v1.1.0.
 #
 
 cmake_minimum_required(VERSION 3.20)
 
 project(qxk24
-    VERSION     1.0.0
-    DESCRIPTION "QXK24 Universal Kernel — ALAMTOLOGI Constitutional Kernel"
+    VERSION     1.1.0
+    DESCRIPTION "QXK24 Universal Kernel — ALAMTOLOGI Faktor Masa Kernel"
     LANGUAGES   C CXX
 )
 
@@ -48,6 +48,11 @@ add_library(qxk24_core STATIC
     src/bridge/qxk24_qxengine_health.c
     src/validation/qxk24_qiubbx.c
     src/memloc/qxk24_memloc_bridge.c
+    src/fm/qxk24_fm.c
+    src/fm/qxk24_mp.c
+    src/fm/qxk24_mdk.c
+    src/fm/qxk24_ahli_masa.c
+    src/fm/qxk24_usul_masa.c
 )
 
 target_include_directories(qxk24_core
@@ -87,6 +92,11 @@ if(QXK24_BUILD_TESTS)
         tests/unit/test_qxk24_governor.cpp
         tests/unit/test_qxk24_report.cpp
         tests/unit/test_qxk24_memory_qxengine.cpp
+        tests/unit/test_qxk24_fm.cpp
+        tests/unit/test_qxk24_mp.cpp
+        tests/unit/test_qxk24_mdk.cpp
+        tests/unit/test_qxk24_ahli_masa.cpp
+        tests/unit/test_qxk24_usul_masa.cpp
         tests/integration/test_qxk24_full_cycle.cpp
         tests/integration/test_qxk24_qxengine_bridge.cpp
         tests/integration/test_qxk24_qxengine_health.cpp
@@ -113,8 +123,8 @@ if(QXK24_BUILD_TESTS)
 endif()
 
 message(STATUS "")
-message(STATUS "QXK24 Universal Kernel v1.0.0")
-message(STATUS "Target: SOVEREIGN >= 95.0")
+message(STATUS "QXK24 Universal Kernel v1.1.0")
+message(STATUS "Target: SOVEREIGN >= 95.0 maintained")
 message(STATUS "ALAMTOLOGI — QURANIC SCIENCE")
 message(STATUS "Founder: Masa Bayu")
 message(STATUS "Repository: https://github.com/qxengine/qxk24")
