@@ -47,6 +47,8 @@ add_library(qxk24_core STATIC
     src/bridge/qxk24_qxengine_bridge.c
     src/bridge/qxk24_qxengine_health.c
     src/validation/qxk24_qiubbx.c
+    src/qiubbx/qxk24_qiubbx_adapter.c
+    src/qiubbx/qxk24_qiubbx_audit.c
     src/memloc/qxk24_memloc_bridge.c
     src/fm/qxk24_fm.c
     src/fm/qxk24_mp.c
@@ -136,6 +138,9 @@ if(QXK24_BUILD_TESTS)
         tests/unit/test_qxk24_adam_hukumz.cpp
         tests/unit/test_qxk24_adam_session.cpp
         tests/unit/test_qxk24_adam_knowledge.cpp
+        tests/unit/test_qxk24_qiubbx_adapter.cpp
+        tests/unit/test_qxk24_qiubbx_adapter_concurrency.cpp
+        tests/unit/test_qxk24_qiubbx_audit_sync.cpp
         tests/unit/test_qxk24_science.cpp
         tests/integration/test_qxk24_full_cycle.cpp
         tests/integration/test_qxk24_qxengine_bridge.cpp

@@ -313,6 +313,9 @@ qxk24_adam_governor
 Detailed Phase 12 records are defined in
 `docs/internal/ADAM_PHASE12_DATA_MODEL.md`.
 
+QIUBBX application integration is defined separately in
+`docs/internal/QIUBBX_INTEGRATION_DESIGN.md`.
+
 ---
 
 ## Product Meaning
