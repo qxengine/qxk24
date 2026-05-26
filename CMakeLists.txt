@@ -10,14 +10,14 @@
 #
 # Description:
 # Configures the QXK24 static library, strict compiler settings, and
-# GoogleTest-based constitutional proof suite for v1.2.0.
+# GoogleTest-based constitutional proof suite for v1.3.0.
 #
 
 cmake_minimum_required(VERSION 3.20)
 
 project(qxk24
-    VERSION     1.2.0
-    DESCRIPTION "QXK24 Universal Kernel — ALAMTOLOGI Caliph Kernel"
+    VERSION     1.3.0
+    DESCRIPTION "QXK24 Universal Kernel — ALAMTOLOGI Faktor Tenaga Kernel"
     LANGUAGES   C CXX
 )
 
@@ -56,6 +56,13 @@ add_library(qxk24_core STATIC
     src/caliph/qxk24_caliph.c
     src/caliph/qxk24_caliph_command.c
     src/caliph/qxk24_caliph_report.c
+    src/ft/qxk24_ft.c
+    src/ft/qxk24_padanan.c
+    src/ft/qxk24_pasata.c
+    src/ft/qxk24_fasa_tenaga.c
+    src/ft/qxk24_jisim.c
+    src/ft/qxk24_serak.c
+    src/ft/qxk24_putar.c
 )
 
 target_include_directories(qxk24_core
@@ -101,6 +108,13 @@ if(QXK24_BUILD_TESTS)
         tests/unit/test_qxk24_ahli_masa.cpp
         tests/unit/test_qxk24_usul_masa.cpp
         tests/unit/test_qxk24_caliph.cpp
+        tests/unit/test_qxk24_ft.cpp
+        tests/unit/test_qxk24_padanan.cpp
+        tests/unit/test_qxk24_pasata.cpp
+        tests/unit/test_qxk24_fasa.cpp
+        tests/unit/test_qxk24_jisim.cpp
+        tests/unit/test_qxk24_serak.cpp
+        tests/unit/test_qxk24_putar.cpp
         tests/integration/test_qxk24_full_cycle.cpp
         tests/integration/test_qxk24_qxengine_bridge.cpp
         tests/integration/test_qxk24_qxengine_health.cpp
@@ -128,7 +142,7 @@ if(QXK24_BUILD_TESTS)
 endif()
 
 message(STATUS "")
-message(STATUS "QXK24 Universal Kernel v1.2.0")
+message(STATUS "QXK24 Universal Kernel v1.3.0")
 message(STATUS "Target: SOVEREIGN >= 95.0 maintained")
 message(STATUS "ALAMTOLOGI — QURANIC SCIENCE")
 message(STATUS "Founder: Masa Bayu")
