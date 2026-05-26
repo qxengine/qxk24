@@ -1,0 +1,57 @@
+/* ============================================================
+ * build.gradle
+ * QXK24 Android - Platform Bridge Build Config
+ * ============================================================
+ * Owner : Masa Bayu (Founder, ALAMTOLOGI & QIUBBX)
+ * Created : 2026-05-25
+ * Repository : https://github.com/qxengine/qxk24
+ * Path : platform/android/build.gradle
+ * License : Apache 2.0
+ * ============================================================ */
+
+plugins {
+    id 'com.android.library'
+    id 'org.jetbrains.kotlin.android'
+}
+
+android {
+    namespace 'com.qxengine.qxk24'
+    compileSdk 34
+
+    defaultConfig {
+        minSdk 21
+        targetSdk 34
+        versionCode 4
+        versionName "1.0.0-alpha.4"
+
+        externalNativeBuild {
+            cmake {
+                cFlags "-std=c11 -Wall -Wextra"
+                arguments "-DQXK24_ANDROID=1"
+            }
+        }
+    }
+
+    sourceSets {
+        main.java.srcDirs = ['.']
+        main.kotlin.srcDirs = ['.']
+        test.java.srcDirs = ['../../tests/platform/android']
+        test.kotlin.srcDirs = ['../../tests/platform/android']
+    }
+
+    externalNativeBuild {
+        cmake {
+            path "../CMakeLists.txt"
+            version "3.22.0"
+        }
+    }
+
+    kotlinOptions {
+        jvmTarget = '17'
+    }
+}
+
+dependencies {
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+}

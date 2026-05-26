@@ -10,7 +10,7 @@
 #
 # Description:
 # Configures the QXK24 static library, strict compiler settings, and
-# GoogleTest-based constitutional proof suite for v1.0.0-alpha.3.
+# GoogleTest-based constitutional proof suite for v1.0.0-alpha.4.
 #
 
 cmake_minimum_required(VERSION 3.20)
@@ -25,6 +25,7 @@ set(CMAKE_C_STANDARD 11)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_C_STANDARD_REQUIRED ON)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
+option(QXK24_BUILD_TESTS "Build QXK24 GoogleTest proof suite" ON)
 
 add_library(qxk24_core STATIC
     src/ama/qxk24_ama_pattern.c
@@ -49,6 +50,10 @@ target_include_directories(qxk24_core
     PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/src
 )
 
+set_target_properties(qxk24_core PROPERTIES
+    POSITION_INDEPENDENT_CODE ON
+)
+
 target_compile_options(qxk24_core PRIVATE
     -Wall -Wextra -Wpedantic -Werror
     -Wno-unused-parameter
@@ -56,46 +61,48 @@ target_compile_options(qxk24_core PRIVATE
 
 target_link_libraries(qxk24_core PRIVATE pthread)
 
-include(FetchContent)
-FetchContent_Declare(
-    googletest
-    URL https://github.com/google/googletest/archive/v1.14.0.zip
-    DOWNLOAD_EXTRACT_TIMESTAMP TRUE
-)
-set(gtest_force_shared_crt ON CACHE BOOL "" FORCE)
-FetchContent_MakeAvailable(googletest)
+if(QXK24_BUILD_TESTS)
+    include(FetchContent)
+    FetchContent_Declare(
+        googletest
+        URL https://github.com/google/googletest/archive/v1.14.0.zip
+        DOWNLOAD_EXTRACT_TIMESTAMP TRUE
+    )
+    set(gtest_force_shared_crt ON CACHE BOOL "" FORCE)
+    FetchContent_MakeAvailable(googletest)
 
-enable_testing()
+    enable_testing()
 
-add_executable(qxk24_tests
-    tests/unit/test_qxk24_ama.cpp
-    tests/unit/test_qxk24_levels.cpp
-    tests/unit/test_qxk24_flow.cpp
-    tests/unit/test_qxk24_governors.cpp
-    tests/unit/test_qxk24_health.cpp
-    tests/unit/test_qxk24_governor.cpp
-    tests/unit/test_qxk24_report.cpp
-    tests/integration/test_qxk24_full_cycle.cpp
-)
+    add_executable(qxk24_tests
+        tests/unit/test_qxk24_ama.cpp
+        tests/unit/test_qxk24_levels.cpp
+        tests/unit/test_qxk24_flow.cpp
+        tests/unit/test_qxk24_governors.cpp
+        tests/unit/test_qxk24_health.cpp
+        tests/unit/test_qxk24_governor.cpp
+        tests/unit/test_qxk24_report.cpp
+        tests/integration/test_qxk24_full_cycle.cpp
+    )
 
-target_link_libraries(qxk24_tests
-    PRIVATE qxk24_core
-    PRIVATE GTest::gtest_main
-)
+    target_link_libraries(qxk24_tests
+        PRIVATE qxk24_core
+        PRIVATE GTest::gtest_main
+    )
 
-target_include_directories(qxk24_tests
-    PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/include
-)
+    target_include_directories(qxk24_tests
+        PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/include
+    )
 
-include(GoogleTest)
-gtest_discover_tests(qxk24_tests
-    PROPERTIES TIMEOUT 60
-    TEST_PREFIX "QXK24."
-    DISCOVERY_TIMEOUT 30
-)
+    include(GoogleTest)
+    gtest_discover_tests(qxk24_tests
+        PROPERTIES TIMEOUT 60
+        TEST_PREFIX "QXK24."
+        DISCOVERY_TIMEOUT 30
+    )
+endif()
 
 message(STATUS "")
-message(STATUS "QXK24 Universal Kernel v1.0.0-alpha.3")
+message(STATUS "QXK24 Universal Kernel v1.0.0-alpha.4")
 message(STATUS "ALAMTOLOGI — QURANIC SCIENCE")
 message(STATUS "Founder: Masa Bayu")
 message(STATUS "Repository: https://github.com/qxengine/qxk24")
